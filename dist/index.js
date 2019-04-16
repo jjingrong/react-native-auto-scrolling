@@ -100,7 +100,7 @@
             var childrenProps = children.props;
             var childrenWithProps = React.cloneElement(children, __assign({}, childrenProps, { style: [childrenProps.style, { marginRight: endPaddingWidth }], ref: function (ref) { return (_this.childComponentRef = ref); } }));
             return (React.createElement(reactNative.View, { style: style },
-                React.createElement(reactNative.ScrollView, { horizontal: true, bounces: false, scrollEnabled: false, onLayout: this.measureContainerView },
+                React.createElement(reactNative.ScrollView, { horizontal: true, bounces: false, scrollEnabled: _a.scrollEnabled || false, onLayout: this.measureContainerView },
                     React.createElement(reactNative.Animated.View, { style: [
                             styles.row,
                             {
